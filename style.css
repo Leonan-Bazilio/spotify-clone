@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./imagens/capa.png), url(./imagens/ruido.png),
+    linear-gradient(50deg, #ff4169, #7c26f8);
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header > .containerHeader {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 0.75rem;
+  position: fixed;
+  top: 0;
+}
+.container {
+  margin: 0 15%;
+  display: flex;
+}
+
+.logo {
+  width: 10rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+p {
+  color: white;
+}
+.links {
+  display: flex;
+  gap: 0.5rem;
+}
+.carouselContainerWithArrow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.carouselContainerWithArrow > button {
+  width: 3rem;
+  height: 4rem;
+  font-size: 4rem;
+  background: none;
+  border: none;
+}
+
+.carouselContainer {
+  display: flex;
+  min-width: 100%;
+  height: 100vh;
+  flex-wrap: nowrap;
+
+  overflow: hidden;
+}
+.carouselElement {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselElement > h1 {
+  font-size: 4rem;
+}
+.arrows {
+  display: flex;
+  gap: 0.25rem;
+}
+.arrows > a {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.arrows > .free {
+  background-color: #7c26f8;
+}
+.arrows > .premium {
+  border: 0.125rem solid white;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.sectionWhite {
+  background-color: white;
+}
+
+.containerGallery {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+.containerGallery > div {
+  flex: 1;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.img {
+  flex: 1 1 40%;
+}
+.img img {
+  width: 100%;
+  height: auto;
+}
