@@ -4,10 +4,7 @@ const carouselElement = document.querySelectorAll(".carouselElement")
 
 let count = 1
 
-
-
-
-prev.addEventListener("click", () => {
+function updateSlide() {
   carouselElement.forEach((element) => {
     element.style.transform = `translateX(-${count * 100}%)`
   })
@@ -16,5 +13,12 @@ prev.addEventListener("click", () => {
   } else if (count === 0) {
     count = carouselElement.length - 1
   }
-})
+
+}
+
+prev.addEventListener("click", updateSlide)
+next.addEventListener("click", updateSlide)
+
+
+
 

@@ -13,10 +13,11 @@ body {
 
 header > .containerHeader {
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.6);
   padding: 0.75rem;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 .container {
   margin: 0 15%;
@@ -38,7 +39,7 @@ a {
   color: white;
   text-decoration: none;
 }
-p {
+nav p {
   color: white;
 }
 .links {
@@ -50,7 +51,7 @@ p {
   align-items: center;
   width: 100%;
 }
-.carouselContainerWithArrow > button {
+.carouselContainerWithArrow button {
   width: 3rem;
   height: 4rem;
   font-size: 4rem;
@@ -60,13 +61,13 @@ p {
 
 .carouselContainer {
   display: flex;
-  min-width: 100%;
+  width: 100%;
   height: 100vh;
   flex-wrap: nowrap;
-
   overflow: hidden;
 }
 .carouselElement {
+  gap: 2rem;
   min-width: 100%;
   height: 100%;
   display: flex;
@@ -76,21 +77,22 @@ p {
 }
 
 .carouselElement > h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+  color: white;
 }
-.arrows {
+.buttonsBuy {
   display: flex;
   gap: 0.25rem;
 }
-.arrows > a {
+.buttonsBuy > a {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
-.arrows > .free {
+.buttonsBuy > .free {
   background-color: #7c26f8;
 }
-.arrows > .premium {
+.buttonsBuy > .premium {
   border: 0.125rem solid white;
 }
 button:hover {
@@ -99,10 +101,10 @@ button:hover {
 
 .sectionWhite {
   background-color: white;
+  padding: 1rem 0;
 }
 
 .containerGallery {
-  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -110,6 +112,16 @@ button:hover {
 }
 .containerGallery > div {
   flex: 1;
+}
+
+.containerGallery h1 {
+  font-size: 2rem;
+  color: #7c26f8;
+}
+.containerGallery h2 {
+  font-size: 1.5rem;
+  color: #7c26f8;
+  margin: 0.5rem 0;
 }
 .gallery {
   display: flex;
@@ -123,4 +135,58 @@ button:hover {
 .img img {
   width: 100%;
   height: auto;
+}
+
+.containerInfo {
+  max-height: 100vh;
+  display: flex;
+  width: 100%;
+}
+
+.texts {
+  flex: 1 1 35%;
+}
+.containerImgs {
+  height: 100%;
+  flex: 1 1 65%;
+  max-width: 65%;
+}
+
+.imgs {
+  flex: 1 1 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 2rem;
+  transform: rotate(30deg);
+}
+
+.imgs img {
+  height: 100%;
+  width: auto;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+
+  background-color: black;
+  position: absolute;
+}
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.rodape {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.rodape > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape img {
+  width: 100px;
 }
